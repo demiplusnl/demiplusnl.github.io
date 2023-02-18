@@ -1,0 +1,23 @@
+{% if page.hero %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="clearfix">
+  <div class="container" data-aos="fade-up">
+    <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+      <img src="{{ page.hero.image }}" alt="" class="img-fluid" />
+    </div>
+
+    <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+      <h2>{{ page.hero.title }}</h2>
+      <div>
+        <a href="{{ page.hero.cta1.link }}" class="btn-get-started scrollto"
+          >{{ page.hero.cta1.text }}</a
+        >
+        <a href="{{ page.hero.cta2.link }}" class="btn-services scrollto"
+          >{{ page.hero.cta2.text }}</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero Section -->
+{% endif %}
