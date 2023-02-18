@@ -1,52 +1,73 @@
 <head>
+  <!-- Google tag (gtag.js)
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0NPH94YQC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-G0NPH94YQC');
+  </script> -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="" />
-   
+
   <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
-  <meta name="description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
-  
-  <link rel="shortcut icon" type="image/png" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
-  <link rel="shortcut icon" sizes="192x192" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
-  
-   <!-- Facebook integration -->
-  <meta property="og:title" content="{{ page.title }}"/>
-  {% if page.image %}<meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}"/>{% endif %}
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"/>
+  {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' |
+  replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: ' ', ' ' | truncate: 160 %}
+  <meta name="description"
+    content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="shortcut icon" type="image/png" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
+  <link rel="shortcut icon" sizes="192x192" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
+
+  <!-- Facebook integration -->
+  <meta property="og:title" content="{{ page.title }}" />
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" />{% endif %}
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="{{ site.title }}"/>
-  <meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
-  
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:description"
+    content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
+
   <!-- Twitter integration -->
   <meta name="twitter:card" content="summary">
-  {% if site.twitter_url %}<meta name="twitter:site" content="{{ site.twitter_url }}">{% endif %}
+  {% if site.twitter_url %}
+  <meta name="twitter:site" content="{{ site.twitter_url }}">{% endif %}
   <meta name="twitter:title" content="{{ page.title }}" />
-  {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-  <meta name="twitter:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
-  
+  <meta name="twitter:description"
+    content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend:
+    site.baseurl | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ " /sitemap.xml" | prepend: site.baseurl | prepend:
+    site.url }}" />
+
   <!-- Favicons -->
-  <link href="{{ "/assets/img/favicon.png" | relative_url }}" rel="icon">
-  <link href="{{ "/assets/img/apple-touch-icon.png" | relative_url }}" rel="apple-touch-icon">
+  <link href="{{ " /assets/img/favicon.png" | relative_url }}" rel="icon">
+  <link href="{{ " /assets/img/apple-touch-icon.png" | relative_url }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ "/assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ "/assets/css/style.css" | relative_url }}" rel="stylesheet">
-  
-  </head>
+  <link href="{{ " /assets/css/style.css" | relative_url }}" rel="stylesheet">
+
+</head>
