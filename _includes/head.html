@@ -20,9 +20,9 @@
   <meta name="description"
     content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="shortcut icon" type="image/png" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
-  <link rel="shortcut icon" sizes="192x192" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ " /assets/img/icon-192x192.png" | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
+  <link rel="shortcut icon" sizes="192x192" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ "/assets/img/icon-192x192.png" | relative_url }}">
 
   <!-- Facebook integration -->
   <meta property="og:title" content="{{ page.title }}" />
@@ -46,14 +46,14 @@
     content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend:
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend:
     site.baseurl | prepend: site.url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ " /sitemap.xml" | prepend: site.baseurl | prepend:
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend:
     site.url }}" />
 
   <!-- Favicons -->
-  <link href="{{ " /assets/img/favicon.png" | relative_url }}" rel="icon">
-  <link href="{{ " /assets/img/apple-touch-icon.png" | relative_url }}" rel="apple-touch-icon">
+  <link href="{{ "/assets/img/favicon.png" | relative_url }}" rel="icon">
+  <link href="{{ "/assets/img/apple-touch-icon.png" | relative_url }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -61,13 +61,13 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ " /assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ " /assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ " /assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ " /assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ " /assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ " /assets/css/style.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/css/style.css" | relative_url }}" rel="stylesheet">
 
 </head>
