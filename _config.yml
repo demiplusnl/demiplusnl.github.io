@@ -23,6 +23,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - tmp/
   - locaties/
   - readme.md
   - CNAME
