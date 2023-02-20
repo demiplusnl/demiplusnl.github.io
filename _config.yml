@@ -22,13 +22,17 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
- #exclude:
-   #- readme.md
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
+exclude:
+  - locaties/
+  - readme.md
+  - CNAME
+  - makefile
+  - themes/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
