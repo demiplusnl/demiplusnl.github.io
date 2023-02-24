@@ -9,6 +9,6 @@ hero:
         text: "Over ons"
         link: "#about"
     cta2:
-        text: "Onze services"
-        link: "#services"        
+        text: "Vind een aftaplocatie"
+        link: "/locaties"
 ---

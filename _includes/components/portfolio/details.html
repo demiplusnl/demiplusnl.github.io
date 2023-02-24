@@ -1,0 +1,40 @@
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        {% for image in page.images %}
+                        <div class="swiper-slide">
+                            <img src="/assets/img/locations/{{ image }}" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Locatie informatie</h3>
+                    <ul>
+                        <li><strong>Adres</strong>: {{ page.adres }}</li>
+                        <li><strong>Provincie</strong>: {{ page.provincie }}</li>
+                        <li><strong>Type</strong>: {{ page.type }}</li>
+                        <li><strong>Openingstijden</strong>: {{ page.openingstijden }}</li>
+                        <li><strong>Telefoon</strong>: {{ page.telefoon }}</li>
+                    </ul>
+                </div>
+                <div class="portfolio-description">
+                    {{ content }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Portfolio Details Section -->

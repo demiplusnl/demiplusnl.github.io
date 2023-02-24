@@ -14,6 +14,10 @@ ga4_id: "G-G0NPH94YQC"
 plugins:
   - jekyll-feed
 
+collections:
+  locaties:
+    output: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -23,7 +27,6 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - locaties/
   - readme.md
   - CNAME
   - makefile
