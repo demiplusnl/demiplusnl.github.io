@@ -1,0 +1,33 @@
+<!-- {% for staff_member in site.locaties %}
+<h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
+<p>{{ staff_member.content | markdownify }}</p>
+{% endfor %} -->
+
+<!-- ======= Locations Section ======= -->
+<section id="services" class="section-bg">
+  
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <p>
+        Bekijk hieronder onze huidige locaties.
+        <br/>
+        <br/>We zijn aan het uitbreiden en hopen snel nieuwe locaties te openen.
+        <br/>Houdt deze pagina in de gaten voor nieuwe locaties.
+        
+      </p>
+    </header>
+    <div class="row justify-content-center">
+      {% for locatie in site.locaties %}
+      <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+        <div class="box">
+          <div class="icon"><i class="bi bi-geo-alt" style="color: #ff689b;"></i></div>
+          <h4 class="title"><a href="{{locatie.url}}">{{ locatie.title }}</a></h4>
+          <p class="description"><img src="/assets/img/locations/{{ locatie.images[0] }}" alt="{{ locatie.title }}" class="img-fluid"></p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+</section>
+<!-- End Locations Section -->
