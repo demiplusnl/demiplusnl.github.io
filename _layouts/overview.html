@@ -4,11 +4,9 @@ layout: default
 
 <main id="main">
   {% include components/general/breadcrumbs.html %}
-
   <section class="inner-page pt-4">
     <div class="container">
-      {{ content }}
-      {% include components/general/overview.html %}
+      {% include components/general/overview.html list=page.list %}
     </div>
   </section>
 
