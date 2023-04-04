@@ -12,6 +12,7 @@ openingstijden: 24x7
 telefoon: 050-5265555
 images:
     - 9351-vw-11/overview-01.jpg
+    - 9351-vw-11/tappunt-02.jpg
     - 9351-vw-11/tappunt-01.jpg
     - 9351-vw-11/locatie.jpg
 ---
