@@ -17,7 +17,7 @@ images:
     - 7913-tb-124/overview-20.jpg
     - 7913-tb-124/rijroute-01.jpg
     - 7913-tb-124/rijroute-02.jpg
-price: € 1,- per 100 liter (openingskorting)
+price: € 1,-95 per 100 liter
 
 ---
 ## Riegshoogtendijk 124a in Hollandscheveld
