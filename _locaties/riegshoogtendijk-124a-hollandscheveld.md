@@ -17,7 +17,8 @@ images:
     - 7913-tb-124/overview-20.jpg
     - 7913-tb-124/rijroute-01.jpg
     - 7913-tb-124/rijroute-02.jpg
-    
+price: € 1,- per 100 liter (openingskorting)
+
 ---
 ## Riegshoogtendijk 124a in Hollandscheveld
 Riegshoogtendijk 124a in Hollandscheveld is gelegen naast Fieten Olie.  

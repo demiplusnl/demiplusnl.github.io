@@ -16,6 +16,7 @@ images:
     - 9351-vw-11/tappunt-02.jpg
     - 9351-vw-11/tappunt-01.jpg
     - 9351-vw-11/locatie.jpg
+price: € 1,95 per 100 liter
 ---
 ## Grijze Hoogte 11 in Leek
 Grijze Hoogte 11 in Leek is onze eerste locatie waar osmosewater kan worden 'getapt'.  

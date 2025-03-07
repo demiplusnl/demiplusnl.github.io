@@ -15,6 +15,7 @@ images:
     - 9723-bg-39/overview-01.jpg
     - 9723-bg-39/tappunt-01.jpg
     - 9723-bg-39/locatie.jpg
+price: € 1,95 per 100 liter
 ---
 ## Osloweg 39 in Groningen
 Demi+ is een samenwerking aangegaan met [Groothandelscentrum Groningen](https://www.groothandelscentrum.com/).  
